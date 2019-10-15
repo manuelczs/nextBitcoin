@@ -4,10 +4,14 @@ import Prices from '../components/Prices';
 
 const Index = (props) => (
     <Layout>
-      <div>
-        <h1>Welcome to BitzPrice</h1>
-        <p>Check current Bitcon rate</p>
-        <Prices bpi={props.bpi} />
+      <div className="has-text-info box">
+        <h1 className="has-text-weight-semibold has-text-info box">Welcome to BitzPrice</h1>
+        <div className="box">
+          <div className="">
+            <p className="has-text-weight-bold">CHECK CURRENT BITCOIN RATE</p>
+          </div>
+          <Prices bpi={props.bpi} />
+        </div>
       </div>
     </Layout>
 );

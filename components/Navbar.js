@@ -1,21 +1,28 @@
 import Link from 'next/link';
 
 const Navbar = () => (
-  <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
+  <section>
     <div className="container">
-      <a className="navbar-brand" href="#">BitzPrice</a>
-      <div className="collapse navbar-collapse">
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
-            <Link href="/"><a className="nav-link">Home</a></Link>
-          </li>
-          <li className="nav-item">
-            <Link href="/about"><a className="nav-link">About</a></Link>
-          </li>
-        </ul>
-      </div>
+      <nav className="navbar is-dark is-spaced">
+        
+        <div className="navbar-brand">
+          <img src="http://pngimg.com/uploads/bitcoin/bitcoin_PNG48.png" width="112" height="28"></img>
+        </div>
+
+        <div className="navbar-menu navbar-start">
+          <a className="navbar-item" href="/">
+            Home
+          </a>
+
+          <a className="navbar-item" href="/about">
+            About
+          </a>
+
+        </div>
+
+      </nav>
     </div>
-  </nav>
+  </section>
 );
 
 export default Navbar;
